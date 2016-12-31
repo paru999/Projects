@@ -1,6 +1,5 @@
 <html>
 <head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <link rel="stylesheet" href="C:/Users/ASUS/Desktop/sample/assignments/boots.html/bootstrap-3.3.7-dist/css/bootstrap.css">
 <style>
 
@@ -103,145 +102,9 @@ left: -120px;
 	color:red;
 
 </style>
-
-<script>
-$(document).ready(function(){
-//$(".error").hide();
-$("#btnlogin").click(function(){
-	var username=$("#email").val();
-	var password=$("#pwd").val();
-	//alert(username);
-	if(username=="")
-	{
-		$("#unerror").text("Input Not Valid");
-
-	}
-	if(password=="")
-	{
-		$("#pserror").text("Input Not Valid");
-	}
-	else if(password.length<=8)
-	{
-		$("#pserror").text("Min 8 Digits");
-	}
-	else
-	{
-		$("#pserror").text("");
-	}
-
-});
-
-$("#account").click(function()
-{
-var firstname=$("#uname").val();
-	
-	//alert(firstname);
-
-	if(firstname=="")
-	{
-		$("#fname").text(" Enter your First Name");
-	}
-	else
-	{
-		$("#fname").text("");
-	}
-var lastname=$("#lname").val();
-//alert(lastname);
-	
-	if(lastname=="")
-	{
-		$("#laname").text("Enter your Last  Name");
-	}
-	else
-	{
-		$("#laname").text("");
-	}
-var Mobilenumber=$("#number").val();
-	if(Mobilenumber=="")
-	{
-		$("#pheno").text("Enter U R No");
-	}
-	else if(/^[a-zA-Z]+$/.test(Mobilenumber))
-	{
-		$("#pheno").text("Not Valid");
-	}
-	else
-	{
-		$("#pheno").text("");
-	}
-
-var email=$("#mail").val();
-
-	var atpos = email.indexOf("@");
-    var dotpos = email.lastIndexOf(".");
-	
-	if(atpos<1 || dotpos<atpos+2 || dotpos+2>=email.length)
-	
-	{
-		//alert(email);
-		$("#ema").text("Not Valid Gmail");
-	}
-	
-	else
-	{
-		$("#ema").text("");
-		
-	}
-
-var password=$("#psw").val();
-	//alert(password);
-
-	if(password=="")
-
-	{
-		$("#paswd").text("Enter U R Password");
-	}
-
-	else
-	{
-		$("#paswd").text("");
-	}
-var date=$("#Day").val();
-var month=$("#Month").val();
-var year=$("#Year").val();
-if(date==""||month==""||year=="")
-	{
-	$("#dys").text("Select U R DOB");
-
-	}
-else
-	{
-	$("#dys").text("");
-	}
-var gender=$("#gender:checked").val()?true:false;
-if(gender==false)
-	{
-	$("#fm").text("Plz Select U R gender");
-	}
-else{
-	$("#fm").text("");
-}
-
-
-});
-
-
-
-
-
-});
-
-
-
-
-</script>
 </head>
-
 <body id="abcd">
-
-
-
-	<div class="container-fluid">
+<div class="container-fluid">
 	 	<div id="background">
 			<div class="row">
 				 <div id="logo.png">
@@ -252,8 +115,7 @@ else{
 	 		 </div>
 	 	 </div>
 	 	 </div>
-	 </div>
-	 <div>
+	<div>
 		<form class="form-inline">
 			<div class="form-group">
 				<div class="row">
@@ -261,12 +123,12 @@ else{
 		 				<div id="form">
 		 				<p id="unerror" class="p"></p>
 		 				<p id="pserror" class="s"></p>
-							<label  for="email"><font color="white">Email</font></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<label  for="email"><font color="white">Email</font></label>
 							<label for="pwd"><font color="white">Password</font></label><br>
      						<input  type="email" class="form-control" id="email"><label id="lblemail"></label>
       						<input type="password" class="form-control" id="pwd">
       						<button type="button" class="btn btn-primary" id="btnlogin">Login</button><br>
-							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" >Forgotten password</a>
+							<a href="#" >Forgotten password</a>
 						</div>
 					</div>
 				</div>
